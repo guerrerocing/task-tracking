@@ -10,9 +10,9 @@
   </thead>
   <tbody>
     <tr *ngFor="let task of tasks; index as  i;">
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>{{task?.name}}</td>
+      <td>{{task?.description}}</td>
+      <td>{{task?.status}}</td>
     </tr>
   </tbody>
 </table>

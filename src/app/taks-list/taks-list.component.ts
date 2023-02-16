@@ -8,9 +8,8 @@ import { Component ,OnInit} from '@angular/core';
 export class TaksListComponent implements OnInit{
 
   tasks= [];
-
   ngOnInit(): void {
-      this.tasks = JSON.parse(localStorage.getItem('tasks')|| '')
+      this.tasks = JSON.parse(localStorage.getItem('tasks')|| '[]')
   }
 
 }
